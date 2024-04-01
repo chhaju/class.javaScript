@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>First and Last Digits</title>
+</head>
+<body>
+
+<h2>First and Last Digits</h2>
+
+<div>
+  <label for="twoDigitNumber">Enter a 2-Digit Number:</label>
+  <input type="number" id="twoDigitNumber" min="10" max="99">
+</div>
+<button onclick="printFirstAndLastDigits()">Get First and Last Digits</button>
+
+<div id="result"></div>
+
+<script>
+    function printFirstAndLastDigits() {
+    var twoDigitNumber = parseInt(document.getElementById('twoDigitNumber').value);
+  
+    var firstDigit = Math.floor(twoDigitNumber / 10);
+    var lastDigit = twoDigitNumber % 10;
+  
+    var result = "First digit: " + firstDigit + "<br>Last digit: " + lastDigit;
+  
+    document.getElementById("result").innerHTML = result;
+  }
+  
+</script>
+</body>
+</html>

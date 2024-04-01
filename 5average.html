@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculate Average Marks</title>
+</head>
+<body>
+
+<h2>Calculate Average Marks</h2>
+
+<div>
+  <label for="markA">Marks in Subject A:</label>
+  <input type="number" id="markA">
+</div>
+<div>
+  <label for="markB">Marks in Subject B:</label>
+  <input type="number" id="markB">
+</div>
+<div>
+  <label for="markC">Marks in Subject C:</label>
+  <input type="number" id="markC">
+</div>
+<div>
+  <label for="markD">Marks in Subject D:</label>
+  <input type="number" id="markD">
+</div>
+<div>
+  <label for="markE">Marks in Subject E:</label>
+  <input type="number" id="markE">
+</div>
+<button onclick="calculateAverage()">Calculate Average</button>
+
+<div id="result"></div>
+
+<scrip>
+    function calculateAverage() {
+        var markA = parseFloat(document.getElementById('markA').value);
+        var markB = parseFloat(document.getElementById('markB').value);
+        var markC = parseFloat(document.getElementById('markC').value);
+        var markD = parseFloat(document.getElementById('markD').value);
+        var markE = parseFloat(document.getElementById('markE').value);
+      
+        var totalMarks = markA + markB + markC + markD + markE;
+        var average = totalMarks / 5;
+      
+        var result = "Average marks: " + average.toFixed(2);
+      
+        document.getElementById("result").innerHTML = result;
+      }
+      
+</scrip>
+</body>
+</html>

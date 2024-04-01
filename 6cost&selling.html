@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculate Profit</title>
+</head>
+<body>
+
+<h2>Calculate Profit</h2>
+
+<div>
+  <label for="costPrice">Cost Price:</label>
+  <input type="number" id="costPrice">
+</div>
+<div>
+  <label for="sellingPrice">Selling Price:</label>
+  <input type="number" id="sellingPrice">
+</div>
+<button onclick="calculateProfit()">Calculate Profit</button>
+
+<div id="result"></div>
+
+<script>
+    function calculateProfit() {
+    var costPrice = parseFloat(document.getElementById('costPrice').value);
+    var sellingPrice = parseFloat(document.getElementById('sellingPrice').value);
+  
+    var profit = sellingPrice - costPrice;
+  
+    var result = "Profit: " + profit.toFixed(2);
+  
+    document.getElementById("result").innerHTML = result;
+  }
+  
+</script>
+</body>
+</html>

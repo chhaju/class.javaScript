@@ -1,0 +1,46 @@
+What is javaScript?
+
+javaScript is a Scripting Language.
+  
+HTML - Page Strucure
+CSS - Style 
+(static)
+
+JS - MAke our page Live( Interactive)(Dynamic)
+
+Programs - Script
+
+Programs - Set of Intruction
+
+History- 
+Brenden Eich - 1995 (10 Days)
+
+LiveScript - Java
+
+javaScript - frontend / backend (Node.js)
+Clint/ Server
+
+Js Engeine - 
+
+V8 Engeine - Chorme, Opera, MS Edge
+SpiderMonkey - Firefox
+
+Read, Compliar, Run into Machine Code
+
+Js Followes a standard - Ecmascript
+is a standard for scripting languages, including JavaScript, JScript, and ActionScript.
+
+Compatabity between diffrent browsers
+
+Addinf JS -
+Internal
+External 
+
+Advantage of External
+
+Tyape of Comment
+
+Single Line, Multi LIne Comment
+//starting of the line 
+
+Use of Comment 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Print Last Digit</title>
+</head>
+<body>
+
+<h2>Print Last Digit</h2>
+
+<div>
+  <label for="number">Enter a Number:</label>
+  <input type="number" id="number">
+</div>
+<button onclick="printLastDigit()">Print Last Digit</button>
+
+<div id="result"></div>
+
+<script>
+    function printLastDigit() {
+    var number = parseInt(document.getElementById('number').value);
+  
+    var lastDigit = number % 10;
+  
+    var result = "Last digit: " + lastDigit;
+  
+    document.getElementById("result").innerHTML = result;
+  }
+  
+</script>
+</body>
+</html>
